@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hooks Radar config",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "preferredUseCases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "preferredProofTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "defaultPlatform": {
+      "type": "string",
+      "enum": ["instagram", "tiktok", "youtube-shorts", "linkedin", "any"]
+    }
+  }
+}
+

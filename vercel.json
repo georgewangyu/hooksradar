@@ -1,0 +1,48 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "hooksradar.vercel.app"
+        }
+      ],
+      "destination": "https://hooksradar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "hooksradar.vercel.app"
+        }
+      ],
+      "destination": "https://hooksradar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "hooks-radar.vercel.app"
+        }
+      ],
+      "destination": "https://hooksradar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "hooks-radar.vercel.app"
+        }
+      ],
+      "destination": "https://hooksradar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    }
+  ]
+}

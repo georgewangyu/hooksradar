@@ -1,0 +1,436 @@
+export type HookPattern = {
+  id: string;
+  name: string;
+  status: string;
+  sourceStrength: string;
+  proofType: string;
+  useCases: string[];
+  formula: string;
+  firstFrame: string;
+  onScreenText: string;
+  twistPayoff: string;
+  sourceBasis: string;
+  sourceUrl: string;
+  featured: boolean;
+  whyItWorks: string[];
+  examples: string[];
+  markdown: string;
+};
+
+export const hookSourceCount = 12;
+export const sourceStrengths = [
+  "owned-adjacent",
+  "owned-proven",
+  "source-observed"
+];
+export const proofTypes = [
+  "contrarian",
+  "cross-platform-outlier",
+  "direct-claim",
+  "education",
+  "how-solution",
+  "pattern-interrupt",
+  "personal-story",
+  "question",
+  "social-proof"
+];
+export const useCases = [
+  "ai-workflow",
+  "build-in-public",
+  "career",
+  "code-review",
+  "creator-process",
+  "creator-strategy",
+  "day-in-the-life",
+  "debugging",
+  "education",
+  "event",
+  "experiment",
+  "family",
+  "friendship",
+  "learning",
+  "life-tradeoff",
+  "lifestyle",
+  "money",
+  "on-call",
+  "opinion",
+  "personal-finance",
+  "product",
+  "relocation",
+  "repos",
+  "saved-reference",
+  "school",
+  "software-engineering",
+  "sponsor-integration",
+  "status",
+  "story",
+  "surprise",
+  "technical-explainer",
+  "tools",
+  "travel",
+  "trend"
+];
+export const hooks: HookPattern[] = [
+  {
+    "id": "ai-demo-production-reality",
+    "name": "AI Demo Meets Production Reality",
+    "status": "proven-adjacent",
+    "sourceStrength": "owned-adjacent",
+    "proofType": "contrarian",
+    "useCases": [
+      "ai-workflow",
+      "software-engineering",
+      "product",
+      "debugging",
+      "code-review"
+    ],
+    "formula": "The AI did [impressive demo]. Then I asked it to handle [boring production reality].",
+    "firstFrame": "AI output on screen followed by tests, logs, evals, or code review.",
+    "onScreenText": "The AI demo worked. Then prod showed up.",
+    "twistPayoff": "Moves from magic demo to senior-engineer reality.",
+    "sourceBasis": "Promoted from George's short-form hook library.",
+    "sourceUrl": "",
+    "featured": true,
+    "whyItWorks": [
+      "It rides the AI-demo trend while adding a credible engineering angle.",
+      "The twist is not skepticism; it is asking what survives real use.",
+      "It creates room for tests, evals, logs, memory, incidents, and maintainability."
+    ],
+    "examples": [
+      "The AI demo worked. Then prod showed up."
+    ],
+    "markdown": "# AI Demo Meets Production Reality\n\n## Why It Works\n\n- It rides the AI-demo trend while adding a credible engineering angle.\n- The twist is not skepticism; it is asking what survives real use.\n- It creates room for tests, evals, logs, memory, incidents, and maintainability.\n\n## Notes\n\n- Show the boring production artifact quickly."
+  },
+  {
+    "id": "blunt-reality-confession",
+    "name": "Blunt Reality Confession",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "direct-claim",
+    "useCases": [
+      "ai-workflow",
+      "career",
+      "on-call",
+      "creator-process",
+      "money"
+    ],
+    "formula": "Let's come clean about the reality of [thing].",
+    "firstFrame": "Direct camera address paired with a receipt, dashboard, calendar, code, or bill.",
+    "onScreenText": "Let's come clean about [thing].",
+    "twistPayoff": "Signals a correction and makes the viewer expect a less polished truth.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": true,
+    "whyItWorks": [
+      "It tells the audience the video is going to puncture a fantasy.",
+      "It can frame a correction without sounding defensive.",
+      "The phrase makes proof important, which helps avoid generic commentary."
+    ],
+    "examples": [
+      "Let's come clean about [thing]."
+    ],
+    "markdown": "# Blunt Reality Confession\n\n## Why It Works\n\n- It tells the audience the video is going to puncture a fantasy.\n- It can frame a correction without sounding defensive.\n- The phrase makes proof important, which helps avoid generic commentary.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"Let's come clean about the reality of X.\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel explicitly presents this formula as a\n  blunt confession hook for puncturing a polished story.\n\n## Notes\n\n- Pair it with visible evidence in the first seconds."
+  },
+  {
+    "id": "emerging-realization",
+    "name": "Emerging Realization",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "pattern-interrupt",
+    "useCases": [
+      "trend",
+      "ai-workflow",
+      "creator-strategy",
+      "career",
+      "opinion"
+    ],
+    "formula": "People are beginning to realize that [weird / pattern-interrupt statement].",
+    "firstFrame": "Direct claim on screen, then immediate evidence or example.",
+    "onScreenText": "People are beginning to realize [weird thing].",
+    "twistPayoff": "Makes a strange thesis feel obvious by the end.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": true,
+    "whyItWorks": [
+      "It frames the idea as a pattern the viewer can join.",
+      "The weird phrase makes the first seconds feel unfinished until explained.",
+      "It is useful for trend interpretation without relying on news."
+    ],
+    "examples": [
+      "People are beginning to realize [weird thing]."
+    ],
+    "markdown": "# Emerging Realization\n\n## Why It Works\n\n- It frames the idea as a pattern the viewer can join.\n- The weird phrase makes the first seconds feel unfinished until explained.\n- It is useful for trend interpretation without relying on news.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"People are beginning to realize that [weird\n  statement].\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel frames this as a pattern-interrupt\n  thesis hook; the source memo records Mino saying this family produced a very\n  large result in one example.\n\n## Notes\n\n- The claim needs a concrete example quickly, or it becomes vague thought leadership."
+  },
+  {
+    "id": "hidden-cost-reversal",
+    "name": "Hidden Cost Reversal",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "contrarian",
+    "useCases": [
+      "career",
+      "ai-workflow",
+      "creator-process",
+      "money",
+      "life-tradeoff"
+    ],
+    "formula": "Everyone tells you [obvious advice], but no one tells you [hidden cost / lonely truth].",
+    "firstFrame": "Calm talking-head or proof object that makes the hidden cost concrete.",
+    "onScreenText": "Everyone tells you [X], but no one tells you [Y].",
+    "twistPayoff": "Starts with accepted advice and flips to the overlooked cost.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": true,
+    "whyItWorks": [
+      "It borrows authority from common advice before disagreeing with it.",
+      "The second clause creates an immediate information gap.",
+      "The viewer gets a promise of honesty, not just tips."
+    ],
+    "examples": [
+      "Everyone tells you [X], but no one tells you [Y]."
+    ],
+    "markdown": "# Hidden Cost Reversal\n\n## Why It Works\n\n- It borrows authority from common advice before disagreeing with it.\n- The second clause creates an immediate information gap.\n- The viewer gets a promise of honesty, not just tips.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"Everyone tells you X, but no one tells you Y.\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel explicitly presents this formula as\n  one of six viral hook structures sourced from already-performing videos.\n\n## Notes\n\n- Strongest when the body shows receipts or a specific lived tradeoff."
+  },
+  {
+    "id": "on-call-interruption",
+    "name": "On-Call Interruption",
+    "status": "proven-owned",
+    "sourceStrength": "owned-proven",
+    "proofType": "pattern-interrupt",
+    "useCases": [
+      "career",
+      "on-call",
+      "day-in-the-life",
+      "story",
+      "software-engineering"
+    ],
+    "formula": "Getting paged as an on-call software engineer [during/while/at X].",
+    "firstFrame": "Pager sound or notification interrupts a visually legible life moment.",
+    "onScreenText": "Getting paged [during X].",
+    "twistPayoff": "Normal life collides with production responsibility.",
+    "sourceBasis": "Promoted from George's short-form hook library.",
+    "sourceUrl": "https://www.tiktok.com/@snackoverflowgeorge/video/7602882748088438037",
+    "featured": true,
+    "whyItWorks": [
+      "The pager sound is a real pattern interrupt.",
+      "The conflict is immediate: normal life versus production responsibility.",
+      "It gives the viewer a story before any explanation starts."
+    ],
+    "examples": [
+      "Getting paged [during X]."
+    ],
+    "markdown": "# On-Call Interruption\n\n## Why It Works\n\n- The pager sound is a real pattern interrupt.\n- The conflict is immediate: normal life versus production responsibility.\n- It gives the viewer a story before any explanation starts.\n\n## Reference Videos\n\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7651318089262353685\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local TikTok API export\n- Public metrics at capture: 482,995 views, 21,533 likes, 54 comments, 367 shares, 35,498 followers, 262.28x creator baseline\n- Hook line / on-screen text: \"Getting paged before attending World Cup game first in Canada.\"\n- First frame: live event/travel plan interrupted by an on-call page\n- Why this matches the pattern: the hook works because the page collides with a specific public life event instead of a generic workday.\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7602882748088438037\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local TikTok API export\n- Public metrics at capture: 750,177 views, 43,706 likes, 72 comments, 469 shares, 35,615 followers, 111.21x creator baseline\n- Hook line / on-screen text: \"TBT to 2025 when I got paged and had black to white hair.\"\n- First frame: on-call interruption attached to a concrete life/status moment\n- Why this matches the pattern: the page is the disruption, and the surrounding life moment makes the conflict legible before explanation.\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7601689116752825621\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local TikTok API export\n- Public metrics at capture: 367,800 views, 19,348 likes, 28 comments, 217 shares, 54.53x creator baseline\n- Hook line / on-screen text: \"Getting paged as oncall software engineer at the office.\"\n- First frame: office/on-call context\n- Why this matches the pattern: plain, literal interruption framing beats a more abstract software-engineering explanation.\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7618840920288398613\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local TikTok API export\n- Public metrics at capture: 289,925 views, 15,545 likes, 19 comments, 76 shares, 42.98x creator baseline\n- Hook line / on-screen text: \"TBT to getting paged as oncall software engineer during the MLS final.\"\n- First frame: sports/finals event interrupted by pager duty\n- Why this matches the pattern: a high-context personal plan collides with production responsibility.\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DVsRtBLjj_K/\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local Instagram API export\n- Public metrics at capture: 19,477 views, 19,446 likes, 31 comments, 984 shares, 502 saves, 39.63x creator baseline\n- Hook line / on-screen text: \"Getting paged driving my sister to airport.\"\n- First frame: family/airport errand interrupted by a page\n- Why this matches the pattern: the ordinary obligation is clear, then on-call raises the stakes.\n\n## Notes\n\n- Use when the interruption is the story, not just a prop."
+  },
+  {
+    "id": "timed-outcome-challenge",
+    "name": "Timed Outcome Challenge",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "question",
+    "useCases": [
+      "build-in-public",
+      "ai-workflow",
+      "creator-process",
+      "learning",
+      "experiment"
+    ],
+    "formula": "Is it possible to [outcome] in [extremely short time frame]?",
+    "firstFrame": "Clock, timer, checklist, empty project, or challenge constraint.",
+    "onScreenText": "Can I [outcome] in [time]?",
+    "twistPayoff": "Turns a process video into a visible wager.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": true,
+    "whyItWorks": [
+      "It gives the video a built-in clock.",
+      "The viewer can track whether the creator is winning or losing.",
+      "It works for messy proof sequences, not only polished tutorials."
+    ],
+    "examples": [
+      "Can I [outcome] in [time]?"
+    ],
+    "markdown": "# Timed Outcome Challenge\n\n## Why It Works\n\n- It gives the video a built-in clock.\n- The viewer can track whether the creator is winning or losing.\n- It works for messy proof sequences, not only polished tutorials.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"Is it possible to [outcome] in [short time]?\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel presents this as a challenge hook\n  with a visible clock and outcome.\n\n## Notes\n\n- Put the timer or constraint in the visual frame if possible."
+  },
+  {
+    "id": "credibility-stack",
+    "name": "Credibility Stack",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "social-proof",
+    "useCases": [
+      "education",
+      "career",
+      "ai-workflow",
+      "creator-process"
+    ],
+    "formula": "My credibility? [credential 1], [credential 2], [credential 3].",
+    "firstFrame": "Fast proof stack: badge, shipped artifact, incident screenshot, repo, or prior result.",
+    "onScreenText": "My credibility? [proof], [proof], [proof].",
+    "twistPayoff": "Compresses trust before a teaching or opinion video.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": false,
+    "whyItWorks": [
+      "It answers why the viewer should listen before the lesson starts.",
+      "The list format creates a fast rhythm.",
+      "It works best when the proof is visual, not only spoken."
+    ],
+    "examples": [
+      "My credibility? [proof], [proof], [proof]."
+    ],
+    "markdown": "# Credibility Stack\n\n## Why It Works\n\n- It answers why the viewer should listen before the lesson starts.\n- The list format creates a fast rhythm.\n- It works best when the proof is visual, not only spoken.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"My credibility? [credential stack].\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel presents this as a fast trust-building\n  hook before teaching or giving an opinion.\n\n## Notes\n\n- Use sparingly. It can feel obnoxious if the body is not immediately useful."
+  },
+  {
+    "id": "explain-it-simply",
+    "name": "Explain It Simply",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "education",
+    "useCases": [
+      "education",
+      "ai-workflow",
+      "career",
+      "money",
+      "technical-explainer"
+    ],
+    "formula": "[Thing] explained to a 5-year-old.",
+    "firstFrame": "Simple prop, whiteboard, sticky note, or visible before/after diagram.",
+    "onScreenText": "[Thing], explained simply.",
+    "twistPayoff": "Promises clarity on a dense topic without requiring expertise.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
+    "featured": false,
+    "whyItWorks": [
+      "It gives the audience permission to be curious without feeling behind.",
+      "It creates a clear constraint: if the explanation is not simple, the video fails.",
+      "It suits topics where the payoff is understanding, not drama."
+    ],
+    "examples": [
+      "[Thing], explained simply."
+    ],
+    "markdown": "# Explain It Simply\n\n## Why It Works\n\n- It gives the audience permission to be curious without feeling behind.\n- It creates a clear constraint: if the explanation is not simple, the video fails.\n- It suits topics where the payoff is understanding, not drama.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"[Thing] explained to a 5-year-old.\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel presents this as a simplicity promise\n  for dense topics.\n\n## Notes\n\n- Avoid condescension. The body should simplify, not dumb down."
+  },
+  {
+    "id": "finals-on-call-collision",
+    "name": "Finals / On-Call Collision",
+    "status": "proven-owned",
+    "sourceStrength": "owned-proven",
+    "proofType": "cross-platform-outlier",
+    "useCases": [
+      "school",
+      "career",
+      "on-call",
+      "day-in-the-life",
+      "software-engineering"
+    ],
+    "formula": "Studying for [final/exam] while [on-call/handling production responsibility].",
+    "firstFrame": "Study materials, laptop, or exam prep interrupted by on-call responsibility.",
+    "onScreenText": "Studying for finals while on-call.",
+    "twistPayoff": "The viewer gets a real conflict: one deadline is academic, the other is production.",
+    "sourceBasis": "Promoted from George-owned TikTok and Instagram outliers.",
+    "sourceUrl": "https://www.tiktok.com/@snackoverflowgeorge/video/7636668396410588436",
+    "featured": false,
+    "whyItWorks": [
+      "It combines two familiar pressures into one immediately understandable conflict.",
+      "\"Studying for finals\" gives non-engineers a way into the on-call story.",
+      "The tension is visual: school work can be on screen before the page or work context appears."
+    ],
+    "examples": [
+      "Studying for finals while on-call."
+    ],
+    "markdown": "# Finals / On-Call Collision\n\n## Why It Works\n\n- It combines two familiar pressures into one immediately understandable conflict.\n- \"Studying for finals\" gives non-engineers a way into the on-call story.\n- The tension is visual: school work can be on screen before the page or work context appears.\n\n## Reference Videos\n\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7636668396410588436\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local TikTok API export\n- Public metrics at capture: 29,141 views, 1,020 likes, 9 comments, 16 shares, 35,498 followers, 15.82x creator baseline\n- Hook line / on-screen text: \"Studying for finals while oncall.\"\n- First frame: finals/studying context plus on-call framing\n- Why this matches the pattern: the hook is a clear collision between school pressure and work pressure.\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DX_OD15OBZ3/\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local Instagram API export\n- Public metrics at capture: 13,631 views, 13,578 likes, 53 comments, 1,994 shares, 751 saves, 67.65x creator baseline\n- Hook line / on-screen text: \"Studying for finals while oncall.\"\n- First frame: finals/studying context plus on-call framing\n- Why this matches the pattern: the same hook carried as a strong Instagram outlier, which makes the pattern cross-platform enough to preserve.\n\n## Notes\n\n- Use when the study or deadline context is real and visible.\n- This is a narrower sibling of `on-call-interruption`; keep it separate only when the academic deadline is the point."
+  },
+  {
+    "id": "ordinary-plan-event-reveal",
+    "name": "Ordinary Plan Event Reveal",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "personal-story",
+    "useCases": [
+      "family",
+      "friendship",
+      "surprise",
+      "travel",
+      "event",
+      "sponsor-integration",
+      "lifestyle"
+    ],
+    "formula": "Telling [person] we're [ordinary plan], but I [take/fly/bring] them to [extraordinary event/place] instead.",
+    "firstFrame": "Candid shot of the person in a normal setting before they know the real plan, with the bait-and-switch text already on screen.",
+    "onScreenText": "Telling [person] we're [ordinary plan], but I take them to [event] instead.",
+    "twistPayoff": "The ordinary plan is only a cover; the payoff is the reveal, reaction, and event footage.",
+    "sourceBasis": "Alyxrlee Roommate Maxxing Reel DXIeLklpkfV; public metadata and thumbnail captured from Instagram.",
+    "sourceUrl": "https://www.instagram.com/p/DXIeLklpkfV/",
+    "featured": false,
+    "whyItWorks": [
+      "It makes the viewer understand the whole premise before the video starts.",
+      "The ordinary plan creates a clean expectation, and the event reveal creates the gap.",
+      "The subject's reaction becomes the retention engine instead of a generic vlog.",
+      "It turns sponsor or event access into a story gift, not a pasted-on ad."
+    ],
+    "examples": [
+      "Telling [person] we're [ordinary plan], but I take them to [event] instead."
+    ],
+    "markdown": "# Ordinary Plan Event Reveal\n\n## Why It Works\n\n- It makes the viewer understand the whole premise before the video starts.\n- The ordinary plan creates a clean expectation, and the event reveal creates the gap.\n- The subject's reaction becomes the retention engine instead of a generic vlog.\n- It turns sponsor or event access into a story gift, not a pasted-on ad.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/p/DXIeLklpkfV/\n- Creator / account: Alyxrlee / `alyxrlee`\n- Captured: 2026-06-30\n- Public metrics at capture: 7,914,432 views, 934,743 likes, 4,451 comments,\n  85,794 followers, 92.2x views per follower.\n- Hook line / on-screen text: \"Telling my roommate we're going to the gym but I\n  fly him to Miami instead.\"\n- First frame: candid bedroom/desk shot of the roommate before the real plan is\n  revealed, with the bait-and-switch text overlay centered on screen.\n- Why this matches the pattern: the Reel makes the whole story legible in one\n  sentence: normal errand first, surprising event/travel payoff second.\n\n## Notes\n\n- Do not copy the creator's roommate identity. Borrow the structure:\n  ordinary plan, hidden bigger plan, reaction, payoff footage.\n- The fake plan should be credible enough that the subject's confusion feels\n  real, not staged."
+  },
+  {
+    "id": "paycheck-budget-reveal",
+    "name": "Paycheck / Budget Reveal",
+    "status": "proven-owned",
+    "sourceStrength": "owned-proven",
+    "proofType": "direct-claim",
+    "useCases": [
+      "money",
+      "career",
+      "personal-finance",
+      "relocation",
+      "status"
+    ],
+    "formula": "I just got my [paycheck/bill/expense], so here is where the money went.",
+    "firstFrame": "Pay stub, rent bill, moving receipt, expense stack, or budget spreadsheet.",
+    "onScreenText": "Where my [paycheck] actually went.",
+    "twistPayoff": "The salary sounds high until the expenses start showing up.",
+    "sourceBasis": "Promoted from George's short-form hook library.",
+    "sourceUrl": "https://www.tiktok.com/@snackoverflowgeorge/video/7600672844451826964",
+    "featured": false,
+    "whyItWorks": [
+      "Exact money creates comparison and comments.",
+      "The audience wants to know whether the status story ends rich, broke, or absurdly in between.",
+      "It turns a finance topic into a sequence of reveals."
+    ],
+    "examples": [
+      "Where my [paycheck] actually went."
+    ],
+    "markdown": "# Paycheck / Budget Reveal\n\n## Why It Works\n\n- Exact money creates comparison and comments.\n- The audience wants to know whether the status story ends rich, broke, or absurdly in between.\n- It turns a finance topic into a sequence of reveals.\n\n## Reference Videos\n\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7600672844451826964\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local TikTok API export\n- Public metrics at capture: 222,299 views, 6,219 likes, 44 comments, 150 shares, 35,615 followers, 32.96x creator baseline\n- Hook line / on-screen text: \"Here's how I budget my biweekly paycheck as a software engineer.\"\n- First frame: paycheck/budget premise with exact personal-finance context\n- Why this matches the pattern: the salary-status curiosity starts immediately, then each expense creates a mini reveal.\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7643155065724767508\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local TikTok API export\n- Public metrics at capture: 34,889 views, 847 likes, 4 comments, 17 shares, 35,498 followers, 18.95x creator baseline\n- Hook line / on-screen text: \"Budget my paycheck before I move to Seattle.\"\n- First frame: relocation/paycheck budget premise\n- Why this matches the pattern: the paycheck is attached to a life transition, so the expenses have narrative stakes.\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DYsOyNFuOzN/\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local Instagram API export\n- Public metrics at capture: 1,011 views, 999 likes, 12 comments, 337 shares, 110 saves, 5.02x creator baseline\n- Hook line / on-screen text: \"Budget my paycheck before I move to Seattle.\"\n- First frame: relocation/paycheck budget premise\n- Why this matches the pattern: the same premise produced a baseline outlier on Instagram even at smaller scale.\n\n## Notes\n\n- Strongest when the ending has a twist."
+  },
+  {
+    "id": "utility-purpose-output-list",
+    "name": "Utility List: Purpose / Output",
+    "status": "proven-owned",
+    "sourceStrength": "owned-proven",
+    "proofType": "how-solution",
+    "useCases": [
+      "tools",
+      "repos",
+      "ai-workflow",
+      "education",
+      "saved-reference"
+    ],
+    "formula": "[Number] [tools/repos/loops/mistakes] worth [using/studying/stealing]. Purpose: [why it exists]. Output: [what it gives you].",
+    "firstFrame": "Laptop-open scroll or list with first item visible.",
+    "onScreenText": "[Number] [things] worth [using/studying/stealing].",
+    "twistPayoff": "Turns a roundup into a saved-reference list with concrete outputs.",
+    "sourceBasis": "Instagram post DZhIRTjONBJ and promoted George hook library.",
+    "sourceUrl": "https://www.instagram.com/p/DZhIRTjONBJ",
+    "featured": false,
+    "whyItWorks": [
+      "The promise is obvious in the first seconds.",
+      "Purpose and Output make each item practical instead of vague.",
+      "It maps well to laptop-open, screen-scroll, and repo/tool roundup videos."
+    ],
+    "examples": [
+      "[Number] [things] worth [using/studying/stealing]."
+    ],
+    "markdown": "# Utility List: Purpose / Output\n\n## Why It Works\n\n- The promise is obvious in the first seconds.\n- Purpose and Output make each item practical instead of vague.\n- It maps well to laptop-open, screen-scroll, and repo/tool roundup videos.\n\n## Notes\n\n- Optimize for saves and bookmarks, not emotional storytelling."
+  }
+];
