@@ -17,8 +17,9 @@ export type HookPattern = {
   markdown: string;
 };
 
-export const hookSourceCount = 12;
+export const hookSourceCount = 13;
 export const sourceStrengths = [
+  "candidate",
   "owned-adjacent",
   "owned-proven",
   "source-observed"
@@ -32,6 +33,7 @@ export const proofTypes = [
   "pattern-interrupt",
   "personal-story",
   "question",
+  "retention",
   "social-proof"
 ];
 export const useCases = [
@@ -39,6 +41,7 @@ export const useCases = [
   "build-in-public",
   "career",
   "code-review",
+  "conceptual-take",
   "creator-process",
   "creator-strategy",
   "day-in-the-life",
@@ -56,6 +59,7 @@ export const useCases = [
   "opinion",
   "personal-finance",
   "product",
+  "reaction",
   "relocation",
   "repos",
   "saved-reference",
@@ -339,6 +343,41 @@ export const hooks: HookPattern[] = [
       "Studying for finals while on-call."
     ],
     "markdown": "# Finals / On-Call Collision\n\n## Why It Works\n\n- It combines two familiar pressures into one immediately understandable conflict.\n- \"Studying for finals\" gives non-engineers a way into the on-call story.\n- The tension is visual: school work can be on screen before the page or work context appears.\n\n## Reference Videos\n\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7636668396410588436\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local TikTok API export\n- Public metrics at capture: 29,141 views, 1,020 likes, 9 comments, 16 shares, 35,498 followers, 15.82x creator baseline\n- Hook line / on-screen text: \"Studying for finals while oncall.\"\n- First frame: finals/studying context plus on-call framing\n- Why this matches the pattern: the hook is a clear collision between school pressure and work pressure.\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DX_OD15OBZ3/\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local Instagram API export\n- Public metrics at capture: 13,631 views, 13,578 likes, 53 comments, 1,994 shares, 751 saves, 67.65x creator baseline\n- Hook line / on-screen text: \"Studying for finals while oncall.\"\n- First frame: finals/studying context plus on-call framing\n- Why this matches the pattern: the same hook carried as a strong Instagram outlier, which makes the pattern cross-platform enough to preserve.\n\n## Notes\n\n- Use when the study or deadline context is real and visible.\n- This is a narrower sibling of `on-call-interruption`; keep it separate only when the academic deadline is the point."
+  },
+  {
+    "id": "hook-rehook-tail",
+    "name": "Hook + Rehook Tail",
+    "status": "candidate",
+    "sourceStrength": "candidate",
+    "proofType": "retention",
+    "useCases": [
+      "conceptual-take",
+      "reaction",
+      "career",
+      "ai-workflow",
+      "trend",
+      "opinion"
+    ],
+    "formula": "[Clear claim], but [specific unresolved payoff / missing part / role shift].",
+    "firstFrame": "Source post, quote, diagram, or talking-head with the unresolved payoff visible in text.",
+    "onScreenText": "[Clear claim] ... but the part people are missing is [payoff].",
+    "twistPayoff": "The opening creates a second curiosity loop that the video must resolve by the end.",
+    "sourceBasis": "Promoted from George's July 2026 hook-selection workflow notes; needs external reference examples before upgrading.",
+    "sourceUrl": "",
+    "featured": false,
+    "whyItWorks": [
+      "The first clause makes the topic legible before the viewer has to think.",
+      "The tail opens a second loop: what is the missing part, hidden cost, new role, or final category?",
+      "It is useful for conceptual videos where a plain thesis would otherwise feel like topic labeling.",
+      "It gives the body a retention contract: the video must answer the tail by the end."
+    ],
+    "examples": [
+      "Everyone is talking about AI replacing engineers, but the real shift is that the job is splitting into new roles.",
+      "The team looks like a normal product team, but it is actually a preview of roles that do not have names yet.",
+      "Everyone says distribution is the moat, but the part people miss is the feedback loop after the first post.",
+      "The demo looks like magic, but the important part is the boring receipt at the end."
+    ],
+    "markdown": "# Hook + Rehook Tail\n\n## Why It Works\n\n- The first clause makes the topic legible before the viewer has to think.\n- The tail opens a second loop: what is the missing part, hidden cost, new role, or final category?\n- It is useful for conceptual videos where a plain thesis would otherwise feel like topic labeling.\n- It gives the body a retention contract: the video must answer the tail by the end.\n\n## Public Examples\n\n- Everyone is talking about AI replacing engineers, but the real shift is that the job is splitting into new roles.\n- The team looks like a normal product team, but it is actually a preview of roles that do not have names yet.\n- Everyone says distribution is the moat, but the part people miss is the feedback loop after the first post.\n- The demo looks like magic, but the important part is the boring receipt at the end.\n\n## Notes\n\n- Treat this as a modifier pattern: it can combine with `Hidden Cost Reversal`,\n  `Emerging Realization`, `AI Demo Meets Production Reality`, or reaction\n  videos anchored on a source post."
   },
   {
     "id": "ordinary-plan-event-reveal",
