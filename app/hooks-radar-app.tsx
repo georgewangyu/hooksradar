@@ -29,6 +29,7 @@ type SubmissionField =
 const skillInstallCommand = "npx skills add georgewangyu/hooksradar --skill hooks-radar -g";
 const skillRepoUrl = "https://github.com/georgewangyu/hooksradar";
 const leadStorageKey = "hooksradar-install-unlocked";
+const pageSize = 12;
 
 const submissionTypes = [
   ["submit-hook", "Submit hook"],
@@ -144,6 +145,7 @@ export function HooksRadarApp({ hooks }: Props) {
   const [formError, setFormError] = useState("");
   const [submissionType, setSubmissionType] = useState("submit-hook");
   const [visibility, setVisibility] = useState<"public" | "private">("public");
+  const [page, setPage] = useState(1);
 
   const filteredHooks = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -172,6 +174,11 @@ export function HooksRadarApp({ hooks }: Props) {
       })
       .sort((left, right) => hookScore(right) - hookScore(left) || left.name.localeCompare(right.name));
   }, [hooks, proofType, query, strength, useCase]);
+  const pageCount = Math.max(1, Math.ceil(filteredHooks.length / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const pageStart = (currentPage - 1) * pageSize;
+  const pageEnd = Math.min(pageStart + pageSize, filteredHooks.length);
+  const visibleHooks = filteredHooks.slice(pageStart, pageEnd);
 
   const selectedHook =
     hooks.find((hook) => hook.id === selectedId) || filteredHooks[0] || hooks[0];
@@ -180,6 +187,10 @@ export function HooksRadarApp({ hooks }: Props) {
   useEffect(() => {
     setLeadUnlocked(window.localStorage.getItem(leadStorageKey) === "true");
   }, []);
+
+  useEffect(() => {
+    setPage(1);
+  }, [proofType, query, strength, useCase]);
 
   async function submitLead(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -386,7 +397,10 @@ export function HooksRadarApp({ hooks }: Props) {
               <p className="card-kicker">Hook Patterns</p>
               <h2>{filteredHooks.length} matching hooks</h2>
             </div>
-            <p>{hooks.length} total public-ready patterns</p>
+            <p>
+              {hooks.length} total public-ready patterns
+              {filteredHooks.length > 0 ? ` / showing ${pageStart + 1}-${pageEnd}` : ""}
+            </p>
           </div>
 
           <div className="table-wrap">
@@ -401,7 +415,7 @@ export function HooksRadarApp({ hooks }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {filteredHooks.map((hook) => (
+                {visibleHooks.map((hook) => (
                   <tr key={hook.id} className={hook.id === selectedHook?.id ? "selected-row" : ""}>
                     <td>
                       <button type="button" onClick={() => setSelectedId(hook.id)}>
@@ -429,6 +443,29 @@ export function HooksRadarApp({ hooks }: Props) {
               </tbody>
             </table>
           </div>
+          {filteredHooks.length > pageSize ? (
+            <nav className="pagination" aria-label="Hook pagination">
+              <button
+                className="page-button"
+                disabled={currentPage === 1}
+                onClick={() => setPage((value) => Math.max(1, value - 1))}
+                type="button"
+              >
+                Previous
+              </button>
+              <span className="page-status">
+                Page {currentPage} of {pageCount}
+              </span>
+              <button
+                className="page-button"
+                disabled={currentPage === pageCount}
+                onClick={() => setPage((value) => Math.min(pageCount, value + 1))}
+                type="button"
+              >
+                Next
+              </button>
+            </nav>
+          ) : null}
         </section>
 
         {selectedHook ? (

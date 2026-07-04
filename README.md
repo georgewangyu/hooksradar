@@ -4,6 +4,8 @@ Hooks Radar is a searchable catalog of reusable short-form video hook patterns.
 
 Live site: https://hooksradar.snackoverflowgeorge.com
 
+Design contract: [DESIGN.md](DESIGN.md)
+
 It follows the same public/private split as `GeorgeLoops`/`loops-radar` and
 `georgesbooks`/`books-radar`:
 
@@ -11,6 +13,28 @@ It follows the same public/private split as `GeorgeLoops`/`loops-radar` and
   George-native examples.
 - `hooksradar` keeps the public website, feeds, tests, and installable agent
   skill.
+
+## What You Get
+
+- Searchable public catalog of reusable hook patterns.
+- Formula, use cases, first-frame, on-screen text, spoken opening, and payoff
+  guidance for each pattern.
+- Source-strength labels and public-safe reference receipts.
+- Weekly feed generation from the synced public catalog.
+- Installable agent skill for adapting hooks to a content idea.
+- GitHub-backed request form and install-command lead capture.
+
+## Quick Start
+
+```sh
+npx skills add georgewangyu/hooksradar --skill hooks-radar -g
+```
+
+Then ask your agent:
+
+```text
+Use Hooks Radar for this content idea: [idea].
+```
 
 ## Local Development
 
@@ -25,9 +49,12 @@ Copy `.env.example` to `.env.local` when testing the install-command lead gate
 or GitHub request form locally. Keep the Supabase service role key and GitHub
 token server-side and never prefix either with `NEXT_PUBLIC_`.
 
-## Checks
+## Verification
 
 ```sh
+npm run validate:hooks
+npm run feed:weekly
+npm run --silent feed:latest
 npm run typecheck
 npm run build
 npm run test:ui
@@ -45,6 +72,12 @@ exports only patterns where `public_ready: true` and writes:
 npm run sync:hooks
 ```
 
+Check source quality without rewriting generated data:
+
+```sh
+npm run validate:hooks
+```
+
 `public_ready: true` is a pattern-level gate, not a blanket permission to
 publish every section in the private source file. Hooks Radar treats the
 private repo as the rich working surface and exports only the public contract:
@@ -59,6 +92,15 @@ private markdown with a few things removed. The sync script fails if generated
 data contains private-only markers such as `George-Native Examples`,
 `Private Notes`, `Private Context`, `George Drafts`, `Internal Notes`,
 `Local archive or transcript note`, local paths, or private repo paths.
+
+## Try The Main Flow
+
+1. Search for a hook by use case, source strength, or pattern language.
+2. Open a hook detail page.
+3. Compare formula, first frame, on-screen text, spoken opening, and payoff.
+4. Copy or adapt a public-safe hook option.
+5. Submit a public pattern request or private review note.
+6. Install the skill and ask for hook options for a content idea.
 
 ## Installable Skill
 

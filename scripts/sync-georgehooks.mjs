@@ -6,6 +6,7 @@ const sourceDir = process.env.GEORGEHOOKS_PATH
   ? path.resolve(process.env.GEORGEHOOKS_PATH)
   : path.resolve(root, "..", "georgehooks");
 const hooksDir = path.join(sourceDir, "hooks");
+const checkOnly = process.argv.includes("--check");
 const localHomePathMarker = `/${"Users"}/`;
 const publicExamplesHeading = "Public Examples";
 const publicMarkdownSectionHeadings = ["Why It Works", publicExamplesHeading, "Reference Videos", "Notes"];
@@ -26,6 +27,8 @@ const privateOnlyMarkers = [
   "George Drafts",
   "Internal Notes",
   "Local archive or transcript note",
+  "private transcript archive",
+  "private archive",
   "georgerepo/",
   localHomePathMarker,
 ];
@@ -124,8 +127,21 @@ function publicMarkdown(markdown) {
 
 function assertPublicExportSafe(hooks) {
   for (const hook of hooks) {
+    const publicText = [
+      hook.name,
+      hook.formula,
+      hook.firstFrame,
+      hook.onScreenText,
+      hook.twistPayoff,
+      hook.sourceBasis,
+      hook.sourceUrl,
+      hook.examples.join("\n"),
+      hook.markdown,
+    ].join("\n");
+    const normalizedPublicText = publicText.toLowerCase();
+
     for (const marker of privateOnlyMarkers) {
-      if (hook.markdown.includes(marker)) {
+      if (normalizedPublicText.includes(marker.toLowerCase())) {
         throw new Error(`Public hook export included private-only marker "${marker}" in ${hook.id}`);
       }
     }
@@ -150,6 +166,13 @@ function listItems(text) {
 
 function oneLine(value, fallback) {
   return (value || fallback).replace(/\s+/g, " ").trim();
+}
+
+function publicSourceBasis(value) {
+  return oneLine(value, "Distilled public-ready pattern.")
+    .replace(/distilled from private transcript archive/gi, "distilled from public reference notes")
+    .replace(/private transcript archive/gi, "public reference notes")
+    .replace(/private archive/gi, "public reference notes");
 }
 
 function toHook(filename, markdown) {
@@ -177,7 +200,7 @@ function toHook(filename, markdown) {
     firstFrame: frontmatter.first_frame || "",
     onScreenText,
     twistPayoff: frontmatter.twist_payoff || "",
-    sourceBasis: frontmatter.source_basis || "Distilled public-ready pattern.",
+    sourceBasis: publicSourceBasis(frontmatter.source_basis),
     sourceUrl: frontmatter.source_url || "",
     featured: Boolean(frontmatter.featured),
     whyItWorks,
@@ -240,10 +263,29 @@ async function main() {
   });
   assertPublicExportSafe(hooks);
 
+  const dataPath = path.join(root, "data", "hooks.json");
+  const libPath = path.join(root, "lib", "hooks.ts");
+  const generatedData = `${JSON.stringify(hooks, null, 2)}\n`;
+  const generatedLib = generatedModule(hooks);
+
+  if (checkOnly) {
+    const [currentData, currentLib] = await Promise.all([
+      readFile(dataPath, "utf8").catch(() => ""),
+      readFile(libPath, "utf8").catch(() => ""),
+    ]);
+
+    if (currentData !== generatedData || currentLib !== generatedLib) {
+      throw new Error("Hooks Radar generated data is out of date; run npm run sync:hooks");
+    }
+
+    console.log(`Validated ${hooks.length} hook patterns from ${hooksDir}`);
+    return;
+  }
+
   await mkdir(path.join(root, "data"), { recursive: true });
   await mkdir(path.join(root, "lib"), { recursive: true });
-  await writeFile(path.join(root, "data", "hooks.json"), `${JSON.stringify(hooks, null, 2)}\n`);
-  await writeFile(path.join(root, "lib", "hooks.ts"), generatedModule(hooks));
+  await writeFile(dataPath, generatedData);
+  await writeFile(libPath, generatedLib);
   console.log(`Synced ${hooks.length} hook patterns from ${hooksDir}`);
 }
 

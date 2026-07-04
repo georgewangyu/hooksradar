@@ -10,6 +10,7 @@
     "start": "next start",
     "sync:hooks": "node scripts/sync-georgehooks.mjs",
     "sync:georgehooks": "node scripts/sync-georgehooks.mjs",
+    "validate:hooks": "node scripts/sync-georgehooks.mjs --check",
     "typecheck": "tsc --noEmit",
     "test:ui": "playwright test"
   },
