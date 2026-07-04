@@ -1,6 +1,14 @@
 ---
 name: hooks-radar
 description: Select and adapt source-backed short-form video hook patterns for TikTok, Instagram Reels, YouTube Shorts, and creator-style social posts.
+memory_tags:
+  - domain:social-media
+  - workflow:hook-selection
+  - skill_role:generator
+  - repo_boundary:tools
+  - inputs:hook-catalog
+  - outputs:shortform-hooks
+  - risk:medium
 ---
 # Hooks Radar
 

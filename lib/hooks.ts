@@ -122,7 +122,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Direct camera address paired with a receipt, dashboard, calendar, code, or bill.",
     "onScreenText": "Let's come clean about [thing].",
     "twistPayoff": "Signals a correction and makes the viewer expect a less polished truth.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": true,
     "whyItWorks": [
@@ -152,7 +152,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Direct claim on screen, then immediate evidence or example.",
     "onScreenText": "People are beginning to realize [weird thing].",
     "twistPayoff": "Makes a strange thesis feel obvious by the end.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": true,
     "whyItWorks": [
@@ -182,7 +182,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Calm talking-head or proof object that makes the hidden cost concrete.",
     "onScreenText": "Everyone tells you [X], but no one tells you [Y].",
     "twistPayoff": "Starts with accepted advice and flips to the overlooked cost.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": true,
     "whyItWorks": [
@@ -242,7 +242,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Clock, timer, checklist, empty project, or challenge constraint.",
     "onScreenText": "Can I [outcome] in [time]?",
     "twistPayoff": "Turns a process video into a visible wager.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": true,
     "whyItWorks": [
@@ -271,7 +271,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Fast proof stack: badge, shipped artifact, incident screenshot, repo, or prior result.",
     "onScreenText": "My credibility? [proof], [proof], [proof].",
     "twistPayoff": "Compresses trust before a teaching or opinion video.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": false,
     "whyItWorks": [
@@ -301,7 +301,7 @@ export const hooks: HookPattern[] = [
     "firstFrame": "Simple prop, whiteboard, sticky note, or visible before/after diagram.",
     "onScreenText": "[Thing], explained simply.",
     "twistPayoff": "Promises clarity on a dense topic without requiring expertise.",
-    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from private transcript archive.",
+    "sourceBasis": "Mino Lee Reel DaGtKEuuQG9; distilled from public reference notes.",
     "sourceUrl": "https://www.instagram.com/reel/DaGtKEuuQG9/",
     "featured": false,
     "whyItWorks": [

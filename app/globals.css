@@ -489,6 +489,34 @@ p {
   background: var(--surface);
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-button {
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.72rem 0.95rem;
+  font-weight: 900;
+}
+
+.page-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.page-status {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
 table {
   width: 100%;
   min-width: 720px;
@@ -666,6 +694,18 @@ ul {
   background: var(--surface);
   padding: 18px;
   white-space: pre-wrap;
+}
+
+.receipt-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.receipt-list a {
+  overflow-wrap: anywhere;
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 0.82rem;
 }
 
 @media (max-width: 1180px) {
