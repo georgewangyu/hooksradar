@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { BrandMark } from "./brand-mark";
 import type { HookPattern } from "@/lib/hooks";
 import { proofTypes, sourceStrengths, useCases } from "@/lib/hooks";
 
@@ -268,7 +269,7 @@ export function HooksRadarApp({ hooks }: Props) {
     <main className="app-shell">
       <header className="topbar">
         <Link className="brand" href="/" aria-label="Hooks Radar home">
-          <span className="brand-mark">HR</span>
+          <BrandMark />
           <span>Hooks Radar</span>
         </Link>
         <label className="search" htmlFor="hook-search">
