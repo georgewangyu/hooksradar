@@ -180,6 +180,39 @@
     "markdown": "# Timed Outcome Challenge\n\n## Why It Works\n\n- It gives the video a built-in clock.\n- The viewer can track whether the creator is winning or losing.\n- It works for messy proof sequences, not only polished tutorials.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"Is it possible to [outcome] in [short time]?\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel presents this as a challenge hook\n  with a visible clock and outcome.\n\n## Notes\n\n- Put the timer or constraint in the visual frame if possible."
   },
   {
+    "id": "bad-news-good-news",
+    "name": "Bad News, Then Good News",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "contrarian",
+    "useCases": [
+      "career",
+      "education",
+      "ai-workflow",
+      "money",
+      "creator-process"
+    ],
+    "formula": "I'll give you the bad news first, then the good news.",
+    "firstFrame": "Direct camera address with a visible split: Bad News / Good News.",
+    "onScreenText": "Bad news first. Good news after.",
+    "twistPayoff": "Promises honesty without making the ending purely negative; the viewer stays for the reversal.",
+    "sourceBasis": "Instagram post DYDEwFkOvoO from Kevin Zhu; source-observed hook extraction.",
+    "sourceUrl": "https://www.instagram.com/p/DYDEwFkOvoO/",
+    "featured": false,
+    "whyItWorks": [
+      "It gives the audience permission to hear a harsh claim because relief is promised up front.",
+      "It creates a simple two-part retention contract.",
+      "It works well for gatekeeping topics where pure optimism would feel fake and pure pessimism would feel demoralizing."
+    ],
+    "examples": [
+      "Bad news: AI coding still requires real review. Good news: review is a trainable workflow.",
+      "Bad news: your first launch feedback will sting. Good news: it tells you what support surface to build next.",
+      "Bad news: on-call still owns your night. Good news: agents can buy back the first ten minutes of context.",
+      "Bad news: a high salary does not make expensive-city math painless. Good news: receipts make the tradeoff visible."
+    ],
+    "markdown": "# Bad News, Then Good News\n\n## Why It Works\n\n- It gives the audience permission to hear a harsh claim because relief is promised up front.\n- It creates a simple two-part retention contract.\n- It works well for gatekeeping topics where pure optimism would feel fake and pure pessimism would feel demoralizing.\n\n## Public Examples\n\n- Bad news: AI coding still requires real review. Good news: review is a trainable workflow.\n- Bad news: your first launch feedback will sting. Good news: it tells you what support surface to build next.\n- Bad news: on-call still owns your night. Good news: agents can buy back the first ten minutes of context.\n- Bad news: a high salary does not make expensive-city math painless. Good news: receipts make the tradeoff visible.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/p/DYDEwFkOvoO/\n- Creator / account: Kevin Zhu / `kevinzhu.ai`\n- Captured: 2026-07-08\n- Public metrics at capture: not captured by the local transcript extractor.\n- Hook line / on-screen text: \"I'll give you some bad news and then I'll give\n  you some good news after.\"\n- First frame: direct-to-camera career reality check.\n- Why this matches the pattern: the source uses an explicit bad-news/good-news\n  promise to make a blunt quant-career claim watchable without becoming a pure\n  discouragement video.\n\n## Notes\n\n- Stronger as an opening structure than as a standalone topic. Use it when the\n  video has a real reversal, not just a vague pep talk."
+  },
+  {
     "id": "credibility-stack",
     "name": "Credibility Stack",
     "status": "source-observed",
@@ -207,6 +240,38 @@
       "My credibility? [proof], [proof], [proof]."
     ],
     "markdown": "# Credibility Stack\n\n## Why It Works\n\n- It answers why the viewer should listen before the lesson starts.\n- The list format creates a fast rhythm.\n- It works best when the proof is visual, not only spoken.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DaGtKEuuQG9/\n- Creator / account: Mino Lee / `minolee.mp4`\n- Captured: 2026-06-27\n- Public metrics at capture: 696 likes, 174 comments; view count not exposed\n  by the extractor.\n- Hook line / on-screen text: \"My credibility? [credential stack].\"\n- First frame: hook teardown / formula delivery.\n- Why this matches the pattern: the Reel presents this as a fast trust-building\n  hook before teaching or giving an opinion.\n\n## Notes\n\n- Use sparingly. It can feel obnoxious if the body is not immediately useful."
+  },
+  {
+    "id": "elite-gate-question",
+    "name": "Elite Gate Question",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "direct-claim",
+    "useCases": [
+      "career",
+      "education",
+      "ai-workflow",
+      "skill-building"
+    ],
+    "formula": "Are you [trait] enough to get into [elite outcome]?",
+    "firstFrame": "Direct camera question with the elite gate visible: company logo, exam, interview prep, offer bar, or benchmark.",
+    "onScreenText": "Are you [trait] enough for [elite outcome]?",
+    "twistPayoff": "Turns a broad ambition into a personal eligibility question, then resolves it with the real gate and what can be trained.",
+    "sourceBasis": "Instagram post DYDEwFkOvoO from Kevin Zhu; source-observed hook extraction.",
+    "sourceUrl": "https://www.instagram.com/p/DYDEwFkOvoO/",
+    "featured": false,
+    "whyItWorks": [
+      "It forces self-identification immediately: the viewer either wants the gate or knows someone who does.",
+      "It creates status tension without needing a long setup.",
+      "It gives the body a clear job: define the real gate, then explain whether it is fixed, trainable, or misunderstood."
+    ],
+    "examples": [
+      "Are you technical enough to survive AI engineering interviews?",
+      "Are you disciplined enough to build in public for 30 days?",
+      "Are you senior enough to let an agent touch production code?",
+      "Are you prepared enough for your first on-call week?"
+    ],
+    "markdown": "# Elite Gate Question\n\n## Why It Works\n\n- It forces self-identification immediately: the viewer either wants the gate or knows someone who does.\n- It creates status tension without needing a long setup.\n- It gives the body a clear job: define the real gate, then explain whether it is fixed, trainable, or misunderstood.\n\n## Public Examples\n\n- Are you technical enough to survive AI engineering interviews?\n- Are you disciplined enough to build in public for 30 days?\n- Are you senior enough to let an agent touch production code?\n- Are you prepared enough for your first on-call week?\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/p/DYDEwFkOvoO/\n- Creator / account: Kevin Zhu / `kevinzhu.ai`\n- Captured: 2026-07-08\n- Public metrics at capture: not captured by the local transcript extractor.\n- Hook line / on-screen text: \"Are you smart enough to get into quant?\"\n- First frame: direct-to-camera quant-career question.\n- Why this matches the pattern: the opening turns a vague career aspiration\n  into a status-gated eligibility question before narrowing to test scores,\n  interview prep, and what can be trained.\n\n## Notes\n\n- Use carefully. The gate has to be real enough to create tension, but the\n  video should not reduce people to one credential or score."
   },
   {
     "id": "explain-it-simply",
@@ -365,6 +430,74 @@
       "Where my [paycheck] actually went."
     ],
     "markdown": "# Paycheck / Budget Reveal\n\n## Why It Works\n\n- Exact money creates comparison and comments.\n- The audience wants to know whether the status story ends rich, broke, or absurdly in between.\n- It turns a finance topic into a sequence of reveals.\n\n## Reference Videos\n\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7600672844451826964\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-05-27 local TikTok API export\n- Public metrics at capture: 222,299 views, 6,219 likes, 44 comments, 150 shares, 35,615 followers, 32.96x creator baseline\n- Hook line / on-screen text: \"Here's how I budget my biweekly paycheck as a software engineer.\"\n- First frame: paycheck/budget premise with exact personal-finance context\n- Why this matches the pattern: the salary-status curiosity starts immediately, then each expense creates a mini reveal.\n- Platform: TikTok\n- URL: https://www.tiktok.com/@snackoverflowgeorge/video/7643155065724767508\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local TikTok API export\n- Public metrics at capture: 34,889 views, 847 likes, 4 comments, 17 shares, 35,498 followers, 18.95x creator baseline\n- Hook line / on-screen text: \"Budget my paycheck before I move to Seattle.\"\n- First frame: relocation/paycheck budget premise\n- Why this matches the pattern: the paycheck is attached to a life transition, so the expenses have narrative stakes.\n- Platform: Instagram\n- URL: https://www.instagram.com/reel/DYsOyNFuOzN/\n- Creator / account: snackoverflowgeorge\n- Captured: 2026-06-28 local Instagram API export\n- Public metrics at capture: 1,011 views, 999 likes, 12 comments, 337 shares, 110 saves, 5.02x creator baseline\n- Hook line / on-screen text: \"Budget my paycheck before I move to Seattle.\"\n- First frame: relocation/paycheck budget premise\n- Why this matches the pattern: the same premise produced a baseline outlier on Instagram even at smaller scale.\n\n## Notes\n\n- Strongest when the ending has a twist."
+  },
+  {
+    "id": "soft-cutoff-analogy",
+    "name": "Soft Cutoff Analogy",
+    "status": "source-observed",
+    "sourceStrength": "source-observed",
+    "proofType": "analogy",
+    "useCases": [
+      "career",
+      "education",
+      "ai-workflow",
+      "skill-building",
+      "money"
+    ],
+    "formula": "If [obvious constraint in familiar domain], the equivalent soft cutoff for [target domain] is [specific gate].",
+    "firstFrame": "Split-screen or simple comparison: familiar gate on one side, target-domain gate on the other.",
+    "onScreenText": "The soft cutoff for [target domain] is [gate].",
+    "twistPayoff": "Makes an uncomfortable threshold discussable, then reframes the path as a test or process that can be trained.",
+    "sourceBasis": "Instagram post DYDEwFkOvoO from Kevin Zhu; source-observed hook extraction.",
+    "sourceUrl": "https://www.instagram.com/p/DYDEwFkOvoO/",
+    "featured": false,
+    "whyItWorks": [
+      "It translates a fuzzy gate into a concrete comparison the viewer understands.",
+      "It lets the creator say an uncomfortable truth without sounding purely personal or arbitrary.",
+      "It creates a natural second beat: whether the cutoff is destiny or just a test format that can be trained."
+    ],
+    "examples": [
+      "If height is the soft cutoff for the NBA, code-review judgment is the soft cutoff for using coding agents professionally.",
+      "If distribution is the soft cutoff for consumer apps, support receipts are the soft cutoff for AI tools.",
+      "If sleep is the soft cutoff for a good training week, incident context is the soft cutoff for surviving on-call.",
+      "If cash flow is the soft cutoff for moving cities, receipts are the soft cutoff for honest paycheck content."
+    ],
+    "markdown": "# Soft Cutoff Analogy\n\n## Why It Works\n\n- It translates a fuzzy gate into a concrete comparison the viewer understands.\n- It lets the creator say an uncomfortable truth without sounding purely personal or arbitrary.\n- It creates a natural second beat: whether the cutoff is destiny or just a test format that can be trained.\n\n## Public Examples\n\n- If height is the soft cutoff for the NBA, code-review judgment is the soft cutoff for using coding agents professionally.\n- If distribution is the soft cutoff for consumer apps, support receipts are the soft cutoff for AI tools.\n- If sleep is the soft cutoff for a good training week, incident context is the soft cutoff for surviving on-call.\n- If cash flow is the soft cutoff for moving cities, receipts are the soft cutoff for honest paycheck content.\n\n## Reference Videos\n\n- Platform: Instagram\n- URL: https://www.instagram.com/p/DYDEwFkOvoO/\n- Creator / account: Kevin Zhu / `kevinzhu.ai`\n- Captured: 2026-07-08\n- Public metrics at capture: not captured by the local transcript extractor.\n- Hook line / on-screen text: \"If you're under six feet tall, you're going to\n  have a hard time making it into the NBA. I think an equivalent soft cutoff\n  for quant is a full score on SAT Math.\"\n- First frame: direct-to-camera quant-career reality check.\n- Why this matches the pattern: the source makes a sensitive career threshold\n  easier to understand by mapping it to a familiar sports threshold, then\n  transitions into what is still trainable.\n\n## Notes\n\n- Do not use this for immutable traits unless the analogy is handled carefully.\n  For George's content, it is safer when the target gate is a workflow,\n  judgment skill, proof object, or visible receipt."
+  },
+  {
+    "id": "story-as-proof",
+    "name": "Story as Proof",
+    "status": "candidate",
+    "sourceStrength": "candidate",
+    "proofType": "personal-story",
+    "useCases": [
+      "career",
+      "education",
+      "ai-workflow",
+      "creator-process",
+      "story",
+      "opinion"
+    ],
+    "formula": "Here's a story about [specific person/company/moment] that explains [lesson].",
+    "firstFrame": "Talking-head or source screenshot with the concrete subject visible before the lesson is named.",
+    "onScreenText": "Here's a story about [specific subject].",
+    "twistPayoff": "The story does the persuading; the lesson arrives after the viewer has a concrete case in mind.",
+    "sourceBasis": "User-observed Kevin Zhu story-opening pattern; candidate until an exact reference capture is added.",
+    "sourceUrl": "",
+    "featured": false,
+    "whyItWorks": [
+      "It promises narrative instead of advice, which lowers resistance to a lesson.",
+      "The concrete subject gives the viewer a reason to keep watching before they know the thesis.",
+      "It lets the creator make a strong claim without starting in abstract opinion mode.",
+      "It works especially well when the story contains a status shift, mistake, unexpected constraint, or behind-the-scenes detail."
+    ],
+    "examples": [
+      "Here's a story about the first time an AI agent made my code review harder.",
+      "Here's a story about the launch feedback that changed what I built next.",
+      "Here's a story about a pager alert that made me rethink on-call automation.",
+      "Here's a story about why the boring proof layer matters more than the demo."
+    ],
+    "markdown": "# Story as Proof\n\n## Why It Works\n\n- It promises narrative instead of advice, which lowers resistance to a lesson.\n- The concrete subject gives the viewer a reason to keep watching before they know the thesis.\n- It lets the creator make a strong claim without starting in abstract opinion mode.\n- It works especially well when the story contains a status shift, mistake, unexpected constraint, or behind-the-scenes detail.\n\n## Public Examples\n\n- Here's a story about the first time an AI agent made my code review harder.\n- Here's a story about the launch feedback that changed what I built next.\n- Here's a story about a pager alert that made me rethink on-call automation.\n- Here's a story about why the boring proof layer matters more than the demo.\n\n## Notes\n\n- Use when the anecdote is the proof, not when the story is just filler before a generic takeaway."
   },
   {
     "id": "utility-purpose-output-list",
