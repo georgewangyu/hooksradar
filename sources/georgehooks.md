@@ -1,6 +1,15 @@
 # GeorgeHooks Source
 
-Hooks Radar syncs from the private `/private/path/hook-source/hooks/*.md` source repo.
+Hooks Radar syncs from the private `<configured-hooks-source>/hooks/*.md` source repo.
 
 Only files marked `public_ready: true` are exported into the public catalog.
 
+
+## Source configuration
+
+Set the appropriate source environment variable explicitly, or store local
+paths in `~/.config/hooksradar/source.json` outside the public checkout. The importer fails before
+writing output if no source is configured; it never guesses a sibling repo.
+Keep source paths and private notes out of public commits.
+Use `HOOKS_SOURCE_DIR`, or config field `hooksDir`. Legacy environment
+aliases remain supported.

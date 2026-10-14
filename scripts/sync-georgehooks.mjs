@@ -1,10 +1,9 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { resolveSource } from "./source-config.mjs";
 
 const root = process.cwd();
-const sourceDir = process.env.GEORGEHOOKS_PATH
-  ? path.resolve(process.env.GEORGEHOOKS_PATH)
-  : path.resolve(root, "..", "georgehooks");
+const sourceDir = resolveSource("hooksDir", ["HOOKS_SOURCE_DIR", "GEORGEHOOKS_PATH"], root);
 const hooksDir = path.join(sourceDir, "hooks");
 const checkOnly = process.argv.includes("--check");
 const localHomePathMarker = `/${"Users"}/`;
